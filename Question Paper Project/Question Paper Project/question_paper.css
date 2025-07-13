@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: lavenderblush;
+}
+h2 {
+  text-align: center; /* Align header text in the center */
+}
+.instructions {
+  margin-bottom: 20px;
+}
+.question {
+  margin-bottom: 20px;
+}
+.sub-question {
+  display: none;
+}
+#addQuestionButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#printButton {
+  display: none;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#printButton:hover {
+  background-color: #45a049;
+}
+.sub-question-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sub-question-button:hover {
+  background-color: #0056b3;
+}
+
+/* Print styles */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  #printButton {
+    display: none;
+  }
+}
+
+#course-name {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+  border: none;
+}
+#course-name.error {
+  border: 2px solid red;
+}
+#course-error {
+  color: red;
+}
+
+#submitForm{
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

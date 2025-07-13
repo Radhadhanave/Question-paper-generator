@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Paper</title>
+  <link rel="stylesheet" type="text/css" href="question_paper.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Tatyasaheb Kore Institute of Engineering & Technology, Warananagar  <br>(An Autonomous Institute)<br>T.Y. B. Tech (Sem-II), In Semester Examination - I, May-2024</h2>
+    <input type="text" id="course-name" placeholder="Enter Course Name" style="width: 100%; margin-bottom: 10px; font-weight: bold; text-align: center; font-size: x-large; border: none;">
+    <div id="course-error"></div>
+    <div class="instructions">
+      <p>Day and Date: Saturday, 10/05/2024</p>
+      <p>Time: 11:15 AM to 12:45 PM</p>
+      <p>Marks: 40</p>
+      <p>Instructions:</p>
+      <ol>
+        <li>Figure to the right indicates full marks.</li>
+        <li>Assume suitable data if missing.</li>
+      </ol>
+    </div>
+
+    <div id="questions"></div>
+
+    <button onclick="submitForm()" id="submitForm">Submit</button>
+    <button onclick="addMainQuestion()" id="addQuestionButton">Add Question</button>
+    <button onclick="printPage()" id="printButton" style="display: none;">Print</button>
+
+    <script src="question_paper.js"></script> 
+   </div>
+</body>
+</html>
